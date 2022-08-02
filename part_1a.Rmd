@@ -1,0 +1,25 @@
+---
+title: "EDS 212 day 2 part 1 - derivatives and git"
+author: "Erica Bishop"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Derivative practice
+many ways to find derivatives in R: "D" function on experssion or derivative function (need to include 'x" or argument to tell it what derivative is with respect to)
+name expression
+ex_1: Find derivative of $$f(x) = 5x^2$$
+
+```{r}
+
+ex_1 <- expression(5*x^2)
+
+ex1_derivative <- deriv(ex_1, "x")
+
+
+```
+
