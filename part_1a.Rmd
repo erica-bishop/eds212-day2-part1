@@ -54,3 +54,7 @@ git is software built for version control with code, github is an online platfor
 Will use usethis to make it a git project (there are many ways to do so)
 setting it up as a local git repo - tracked by git locally
 
+now changes made locally are being tracked by git (created a local repo) - but this still only exists on the computer, so needs to be connected to a remote repository
+
+to do this, use usethis github
+
