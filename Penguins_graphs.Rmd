@@ -31,7 +31,5 @@ ggplot(data = penguins,
 
 gg plot is good at recognizing groups within variables and making aesthetic distinctions
 #change color of points
-stage then push then commit
-
 
 
