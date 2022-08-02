@@ -7,4 +7,29 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
 ```
+
+can use functions like glimpse, tail, head, or view to see the data (but be careful with view, returns entire set)
+Tidy data structure: one cell, one column for every single variable, (i.e. each penguin has its own row)
+
+##Scatterplot of body mass v flipper length
+ggplot needs three things: 1. ggplot(data = ), aes(x,y) + type of chard (i.e. geom)
+can add more aesthetics for color, size, etc. within the +plottype(aes()) - if it refers to a variable it goes in aes() if it doesn't refer to variable, goes outside of aes
+
+```{r}
+ggplot(data = penguins, 
+       aes(x = body_mass_g, y = flipper_length_mm)) + geom_point(aes(color = species), size = 1) +
+  facet_wrap(~island) +
+  theme_light() +
+  labs( x = "Boddy mass (g)",
+        y = "Flipper length (mm)") +
+  labs(title = "Penguins on their Islands")
+
+```
+
+gg plot is good at recognizing groups within variables and making aesthetic distinctions
+#change color of points
+
+
