@@ -20,6 +20,37 @@ ex_1 <- expression(5*x^2)
 
 ex1_derivative <- deriv(ex_1, "x")
 
+#then to find the slope or evaluate the derivative at a pont then use eval derivaitve
+x <- 2.8
+eval(ex1_derivative)
+
 
 ```
+```{r}
+?expression
+```
+can create a sequence to evaluate many values of x
+Now evaluate a derivative using D function
+```{r}
+?deriv
+```
+Find the slope of $g(z) = 2z^3-10.5z^2+4.1$
+```{r}
+gz <- expression(2*z^3 - 10.5*z^2 + 4.1)
+
+dg_dz <- D(gz, 'z')
+
+##Now look at the derivative over a range of values
+## use the eval function after assigning with 'D' function
+
+z <- seq(from = -10, to = 10, by = 0.5)
+
+eval(dg_dz)
+```
+
+##Intro to git
+git is software built for version control with code, github is an online platform for managing that, also has project management, sharing, and publishing functions. github is just one way people use git
+
+Will use usethis to make it a git project (there are many ways to do so)
+setting it up as a local git repo - tracked by git locally
 
